@@ -4,6 +4,7 @@
 
 this is a simple permit checker made out of PHP that I made to make permit checking more easier.
 i made this while I'm bored lol
+the site is in https://www.devirent.com/permit but it requires login to access lol
 
 ## Setup
 
