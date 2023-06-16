@@ -1,16 +1,26 @@
 # ww's permit checker
 
-ww's permit Checker is a simple tool that allows you to check if a permit is valid or not by entering an OR (Official Receipt) number. It is designed to be easy to use and can be integrated into any application that requires permit validation.
+230527
+
+this is a simple permit checker made out of PHP that I made to make permit checking more easier.
+i made this while I'm bored lol
+
+## Setup
+
+Change line 87's url.
 
 
-Installation
-To install the Permit Checker, simply clone this repository and run the following command:
+You can do whatever you want in the code. If you want to do some experiments then go for it :))
 
-Usage
-To use the Permit Checker, you can import it into your application and call the checkPermit function, passing in the permit number as a parameter. The function will return a boolean value indicating whether the permit is valid or not.
+## Usage
+To use the Permit Checker, put the permit number in the field and submit. it will send a post request to the permit site you have entered and gets the content. then it will filter the uneccessary tags and show the name.
 
 Contributing
-If you would like to contribute to the Permit Checker, please fork this repository and submit a pull request. All contributions are welcome!
+If you would like to contribute, please fork this repository and submit a pull request. All contributions are welcome!
 
 License
-The Permit Checker is licensed under the MIT License. See the LICENSE file for more information.
+ww's permit checker is licensed under the MIT License. See the LICENSE file for more information.
+
+Thank you!!
+
+- wonwoonieeee
