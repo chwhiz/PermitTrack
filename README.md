@@ -1,8 +1,8 @@
-# ww's permit checker
+# ww's permit lookup
 
 230527
 
-this is a simple permit checker made out of PHP that I made to make permit checking more easier.
+this is a simple permit lookup made out of PHP that I made to make permit checking more easier.
 i made this while I'm bored lol
 the site is in https://www.devirent.com/permit but it requires login to access lol
 
@@ -14,7 +14,7 @@ Change line 87's url.
 You can do whatever you want in the code. If you want to do some experiments then go for it :))
 
 ## Usage
-To use the Permit Checker, put the permit number in the field and submit. it will send a post request to the permit site you have entered and gets the content. then it will filter the uneccessary tags and show the name.
+To use ww's permit lookup, put the permit number in the field and submit. it will send a post request to the permit site you have entered and gets the content. then it will filter the uneccessary tags and show the name.
 
 ## Contributing
 If you would like to contribute, please fork this repository and submit a pull request. All contributions are welcome!
