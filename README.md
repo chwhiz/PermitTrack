@@ -22,7 +22,7 @@ If you would like to contribute, please fork this repository and submit a pull r
 
 ## FAQs
 
-#### Q: I get an file_get_contents() error when I try to use the permit lookup.
+#### Q: I get a file_get_contents() error when I try to use the permit lookup.
 A: This is most likely because you didn't configured your php.ini to enable the openssl extension. To fix this, open your php.ini file and uncomment the line `;extension=openssl` by removing the semicolon. It should look like this:
 ```php
 extension=openssl
