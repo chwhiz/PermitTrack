@@ -20,14 +20,6 @@ To use ww's permit lookup, put the permit number in the field and submit. it wil
 If you would like to contribute, please fork this repository and submit a pull request. All contributions are welcome!
 
 
-## FAQs
-
-#### Q: I get a file_get_contents() error when I try to use the permit lookup.
-A: This is most likely because you didn't configured your php.ini to enable the openssl extension. To fix this, open your php.ini file and uncomment the line `;extension=openssl` by removing the semicolon. It should look like this:
-```php
-extension=openssl
-```
-
 
 ## License
 ww's permit checker is licensed under the MIT License. See the LICENSE file for more information.
