@@ -1,3 +1,4 @@
+
 # PermitTrack
 
 PermitTrack is a lightweight PHP application designed to ease the process of checking permit statuses.
