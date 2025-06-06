@@ -1,14 +1,4 @@
-<!-- 
-    
-ww's permit checker v2.0
-
-this is a simple permit checker made out of PHP that I made to make permit checking more easier.
-
-check README for more info.
-
-This file is licensed under the MIT License.
--->
-
+<!-- PermitTrack v3.0 || This file is licensed under the MIT License. -->
 
 <!DOCTYPE html>
 <html>
@@ -16,7 +6,7 @@ This file is licensed under the MIT License.
 
 <link href="https://fonts.cdnfonts.com/css/gotham-ssm" rel="stylesheet"> <!-- gotham ssm font url from cdnfonts.com -->
                 
-    <title>ww's Permit Lookup</title>
+    <title>PermitTrack</title>
 
     <style>
         body {
@@ -78,12 +68,12 @@ This file is licensed under the MIT License.
     </style>
 </head>
 <body>
-    <h1 id='won'>ww's Permit Lookup</h1>
+    <h1 id='won'>PermitTrack</h1>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $permit_number = $_POST["permit_number"];
 
-        // change the URL below to the URL of the permit database with the parameter.
+        // Change the URL below to the URL of the permit database with the parameter.
         $url = "https://permit.example.com?permitno=" . urlencode($permit_number); // gets the url and adds the permit number.
 
         // Retrieve the contents of the site
@@ -93,8 +83,9 @@ This file is licensed under the MIT License.
         $lines = explode("\n", $file_contents);
 
         foreach ($lines as $line) {
-            // change the string below to the string below (the td width thing) into the tag where the name 
-            //is found so it will filter the name of the student.
+        // Identifies the HTML table <td> element containing the student's full name.
+        // This specific td tag is identified by its width attribute and internal font tags.
+        // Extracts the full name by stripping all HTML tags from the matched line.
 
             if (strpos($line, '<td width="35%"><strong><font size="2">') !== false) {
                 $fullName = strip_tags($line);
@@ -136,7 +127,7 @@ This file is licensed under the MIT License.
 
 <!-- Footer -->
     <footer style="background-color: #1f0c0d; padding: 20px; text-align: center;">
-        <b><p id='won'>System developed by wonwoonieeee.<a href="https://github.com/wonwoonieeee/permit-lookup" > Source code in Github.</a></p></b>
+        <b><p id='won'>System developed by chwhiz.<a href="https://github.com/chwhiz/PermitTrack" > Source code in GitHub.</a></p></b>
         <p id='won'>This was possible with the use of HTML, CSS, and PHP</p>
 
     </footer>
