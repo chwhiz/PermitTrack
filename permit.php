@@ -127,7 +127,7 @@
 
 <!-- Footer -->
     <footer style="background-color: #1f0c0d; padding: 20px; text-align: center;">
-        <b><p id='won'>System developed by chwhiz.<a href="https://github.com/chwhiz/PermitTrack" > Source code in Github.</a></p></b>
+        <b><p id='won'>System developed by chwhiz.<a href="https://github.com/chwhiz/PermitTrack" > Source code in GitHub.</a></p></b>
         <p id='won'>This was possible with the use of HTML, CSS, and PHP</p>
 
     </footer>
