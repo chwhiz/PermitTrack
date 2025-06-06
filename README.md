@@ -17,7 +17,7 @@ To get started with PermitTracker:
 
 1. Clone this repository to your local machine.
 2. Open the ``permit.php`` file.
-3. Locate line ``77``.
+3. Locate the line where the `$url` variable is assigned.
 ```php
  $url = "https://permit.example.com?permitno=" . urlencode($permit_number); // gets the url and adds the permit number.
 ```
