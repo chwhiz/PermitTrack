@@ -1,25 +1,38 @@
-# jeon's permit lookup
+# PermitTrack
 
-230527
+PermitTrack is a lightweight PHP application designed to ease the process of checking permit statuses.
 
-This is a simple permit lookup made out of PHP that I made to make permit checking more easier. 
-i made this while I'm bored lol
+>[!NOTE]
+> This project will be converted into an API.
+
+## Features
+- Easy-to-use form for entering permit numbers.
+- Sends HTTP POST requests to configured permit websites.
+- Processes retrieved HTML content to extract and display relevant data (e.g., names).
 
 ## Setup
 
-Change line 87's url.
+To get started with PermitTracker:
+
+1. Clone this repository to your local machine.
+2. Open the ``permit.php`` file.
+3. Locate line ``77``.
+```php
+ $url = "https://permit.example.com?permitno=" . urlencode($permit_number); // gets the url and adds the permit number.
+```
+
+4. Update the URL variable to point to the specific permit lookup API endpoint or website you intend to query.
 
 
-You can do whatever you want in the code. If you want to do some experiments then go for it :))
+>[!NOTE]
+> This project is open-source, and modifications are welcome.
 
 ## Usage
-To use jeon's permit lookup, put the permit number in the field and submit. it will send a post request to the permit site you have entered and gets the content. then it will filter the uneccessary tags and show the name.
+1. Access the application via your web server.
+2. Input the permit number into the designated field on the form.
+3. Submit the form.
 
-## Contributing
-If you would like to contribute, please fork this repository and submit a pull request. All contributions are welcome!
-
+> The application will then send an HTTP POST request to the configured permit website, retrieve the page content, filter out any HTML tags, and display the extracted name information.
 
 ## License
-Jeon's permit checker is licensed under the MIT License. See the LICENSE file for more information.
-
-Thank you!!
+PermitTrack is licensed under the [MIT License](https://github.com/chwhiz/permit-checker/blob/main/LICENSE). See the [LICENSE](https://github.com/chwhiz/permit-checker/blob/main/LICENSE) file in the repository for more information.
